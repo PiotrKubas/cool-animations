@@ -1,5 +1,6 @@
 {
-    "name": "react-template",
+    "homepage": "https://piotrkubas.github.io/cool-animations/",
+    "name": "cool-animations",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -15,6 +16,8 @@
     },
     "scripts": {
         "start": "react-scripts start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
@@ -42,6 +45,7 @@
         "eslint": "^7.20.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^3.4.0",
+        "gh-pages": "^4.0.0",
         "prettier": "^2.3.1",
         "typescript": "^4.3.4"
     }
