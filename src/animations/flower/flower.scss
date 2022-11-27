@@ -1,0 +1,43 @@
+.flower {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: #dce0f8;
+    width: 100%;
+
+    &-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-core {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-top {
+        margin-bottom: -30px;
+        z-index: 10;
+    }
+}
+
+.leaf {
+    &-right {
+        position: absolute;
+        left: 4px;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &-left {
+        position: absolute;
+        right: -2px;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
